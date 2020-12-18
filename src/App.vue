@@ -25,7 +25,7 @@ export default {
   data () {
     return {
       items: [
-      { title: 'このサイトについて', content: 'ソフトウェアエンジニア"shozzy"のポートフォリオサイトです。\n技術的には、Vue.js＋Vuetifyで作成し、GitHubで管理して、Netlifyにホスティングして公開しています。' },
+      { title: 'このサイトについて', content: 'ソフトウェアエンジニア"4door"のポートフォリオサイトです。\n技術的には、Vue.js＋Vuetifyで作成し、GitHubで管理して、Netlifyにホスティングして公開しています。' },
       { title: 'カード02', content: 'カード02の内容です' },
       { title: 'カード03', content: 'カード03の内容です' },
       ]
