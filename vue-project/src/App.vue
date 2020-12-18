@@ -1,60 +1,35 @@
+
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <v-content>
+      <v-container fluid>
+        <v-layout row wrap>
+          <v-flex v-for="item in items" v-bind:key="item.id" xs12 sm6 md4>
+            <Card v-bind:title="item.title" v-bind:content="item.content"/>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+  <!-- 後略 -->
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Card from './components/Card.vue'
 
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
+    Card
   },
-
-  data: () => ({
-    //
-  }),
-};
+  data () {
+    return {
+      items: [
+      { title: 'このサイトについて', content: 'ソフトウェアエンジニア"shozzy"のポートフォリオサイトです。\n技術的には、Vue.js＋Vuetifyで作成し、GitHubで管理して、Netlifyにホスティングして公開しています。' },
+      { title: 'カード02', content: 'カード02の内容です' },
+      { title: 'カード03', content: 'カード03の内容です' },
+      ]
+    }
+  }
+}
 </script>
