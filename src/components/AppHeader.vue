@@ -1,15 +1,13 @@
 <template>
   <header>
-    <v-app-bar
-      app
-      dark
-    >
+    <v-app-bar app dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title>MyPortfolioSite</v-toolbar-title>
+      <v-toolbar-title>Portfolio</v-toolbar-title>
       <v-tabs>
         <v-tab
           v-for="(menuItem, index) in menuItems"
           :key="index"
+          :to="menuItem.url"
         >
           {{ menuItem.name }}
         </v-tab>
@@ -20,10 +18,7 @@
       absolute
       temporary
     >
-      <v-list
-        nav
-        dense
-      >
+      <v-list nav dense>
         <v-list-item-group>
           <v-list-item
             v-for="(menuItem, index) in menuItems"
@@ -36,20 +31,17 @@
     </v-navigation-drawer>
   </header>
 </template>
- 
 <style lang="scss" scoped>
 @import '../styles/common/common.scss';
 .v-toolbar__title {
   overflow: visible !important;
   margin-right: 50px !important;
 }
- 
 .v-app-bar__nav-icon {
   @include display_pc {
     display: none !important;
   }
 }
- 
 .v-tabs {
   display: none;
  
@@ -58,10 +50,8 @@
   }
 }
 </style>
- 
 <script>
 import constants from '../common/constants'
- 
 export default {
   name: 'AppHeader',
   data () {
