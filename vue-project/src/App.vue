@@ -1,28 +1,35 @@
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-content>
+      <v-container fluid>
+        <v-layout row wrap>
+          <v-flex v-for="item in items" v-bind:key="item.id" xs12 sm6 md4>
+            <Card v-bind:title="item.title" v-bind:content="item.content"/>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-content>
+  <!-- 後略 -->
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from './components/Card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Card
+  },
+  data () {
+    return {
+      items: [
+      { title: 'このサイトについて', content: 'ソフトウェアエンジニア"shozzy"のポートフォリオサイトです。\n技術的には、Vue.js＋Vuetifyで作成し、GitHubで管理して、Netlifyにホスティングして公開しています。' },
+      { title: 'カード02', content: 'カード02の内容です' },
+      { title: 'カード03', content: 'カード03の内容です' },
+      ]
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
