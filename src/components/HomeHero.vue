@@ -26,9 +26,9 @@
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-  @include display_pc {
-    font-size: 40px;
-  }
+    @include display_pc {
+      font-size: 40px;
+    }
   }
 }
 </style>
