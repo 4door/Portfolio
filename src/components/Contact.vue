@@ -32,7 +32,7 @@
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-  margin: 0px auto; 
+    margin: 0px auto; 
     @include display_pc {
       font-size: 30px;
     }

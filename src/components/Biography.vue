@@ -16,5 +16,16 @@
   @include display_pc {
     height: 100vh;
   }
+ 
+  &-text {
+    color: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px auto; 
+    @include display_pc {
+      font-size: 30px;
+    }
+  }
 }
 </style>
