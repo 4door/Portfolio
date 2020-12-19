@@ -2,21 +2,15 @@
   <section class="contact">
     <v-container fluid fill-height class="contact__content">
       <form name="contact" l class="contact__content-text" method="POST" netlify>
-        <p>
-            <label class="label">Your Name</label>   
-            <input class="textbox" type="text" name="name" />
-        </p>
-        <p>
-            <label class="label">Your Email</label>
-            <input class="textbox" type="email" name="email" />
-        </p>
-        <p>
-            <label class="label">Message</label>
-            <textarea class="textbox" name="message"></textarea>
-        </p>
-        <p>
-            <v-btn large dark class="button" type="submit">Send</v-btn>
-        </p>
+        <b-col>
+          <label class="label">Your Name</label>   
+          <b-form-input v-model="form.name" class="textbox" type="text" name="name" />
+          <label class="label">Your Email</label>
+          <b-form-input v-model="form.mail" class="textbox" type="email" name="email" />
+          <label class="label">Message</label>
+          <b-form-textarea v-model="form.message" class="textbox" name="message"></b-form-textarea>
+          <v-btn large dark class="button"  @click="sendBtnClick">Send</v-btn>
+        </b-col>
       </form>
     </v-container>
   </section>
@@ -50,33 +44,34 @@
 }
 .textbox{
   background-color: rgba(63, 63, 63, 0.638) !important;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 </style>
 <script>
 export default {
-  methods: {
-      encode (data) {
-      return Object.keys(data)
-          .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-          )
-          .join('&')
-      },
-      handleSubmit () {
-      const axiosConfig = {
-          header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+  data: function(){
+    return{
+      form:{
+        name: null,
+        mail: null,
+        message: null
       }
-      this.axios
-          .post(
-          '/',
-          this.encode({
-              'form-name': 'contact',
-              ...this.form
-          }),
-          axiosConfig
-          )
-      },
+    }
+  },
+  methods: {
+    sendBtnClick(){
+      this.showToast('メッセージを送信しました');
+      this.clearForm();
+    },
+    clearForm(){
+      this.form.name = null;
+      this.form.mail = null;
+      this.form.message = null;
+    },
+    showToast(msg){
+      this.$bvToast.toast(msg);
+    }
   }
 }
 
