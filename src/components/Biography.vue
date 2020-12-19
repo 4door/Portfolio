@@ -1,7 +1,10 @@
 <template>
   <section class="biography">
     <v-container fluid fill-height class="biography__content">
-        <h2>Biography</h2>
+        <b-col>
+          <b-row class="title">Biography</b-row>
+          <b-row class="about">a</b-row>
+        </b-col>
     </v-container>
   </section>
 </template>
@@ -16,16 +19,19 @@
   @include display_pc {
     height: 100vh;
   }
- 
-  &-text {
-    color: rgba(255, 255, 255, 0.72);
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0px auto; 
-    @include display_pc {
-      font-size: 30px;
-    }
-  }
+}
+.title{
+  font-size: 40px !important;
+  text-align: center;
+  margin: 0px auto; 
+  color: rgba(255, 255, 255, 0.72);
+  background-color: rgba(63, 63, 63, 0.638);
+}
+.about{
+  font-size: 30px;
+  text-align: center;
+  margin: 0px auto; 
+  color: rgba(255, 255, 255, 0.72);
+  background-color: rgba(63, 63, 63, 0.638);
 }
 </style>

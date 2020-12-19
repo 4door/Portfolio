@@ -9,11 +9,12 @@
 .section__title {
   padding-top: 120px;
   text-align: center;
+  background-color: rgb(63, 63, 63);
  
   &-text {
     font-weight: 700;
     font-size: 40px;
-    color: #e65f78;
+    color: rgba(255, 255, 255, 0.72);
   }
 }
 </style>
