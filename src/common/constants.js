@@ -5,8 +5,8 @@ export default {
         url: '/'
       },
       {
-        name: 'ABOUT',
-        url: '/about'
+        name: 'BIOGRAPHY',
+        url: '/biography'
       },
       {
         name: 'WORK',

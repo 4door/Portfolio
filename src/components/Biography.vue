@@ -1,13 +1,13 @@
 <template>
-  <section class="about">
-    <v-container fluid fill-height class="about__content">
-        <h2>About</h2>
+  <section class="biography">
+    <v-container fluid fill-height class="biography__content">
+        <h2>Biography</h2>
     </v-container>
   </section>
 </template>
 <style lang="scss" scope>
 @import '../styles/common/common.scss';
-.about__content {
+.biography__content {
   background: url("../assets/top.jpg");
   background-size: cover;
   background-position: center center;
