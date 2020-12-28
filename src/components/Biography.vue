@@ -1,9 +1,17 @@
 <template>
   <section class="biography">
     <v-container fluid fill-height class="biography__content">
-        <b-col>
-          <b-row class="title">Biography</b-row>
-          <b-row class="about">a</b-row>
+        <b-col class="text">
+          <b-row>Biography</b-row>
+          <b-row class="about">
+            1996年生まれ。
+            東京都八王子市出身。
+            東京工業高等専門学校物質工学科卒業後、
+          </b-row>
+          <b-row>Career</b-row>
+          <b-row class="about">
+            2017年
+          </b-row>
         </b-col>
     </v-container>
   </section>
@@ -20,18 +28,16 @@
     height: 100vh;
   }
 }
-.title{
-  font-size: 40px !important;
+.text{
   text-align: center;
   margin: 0px auto; 
   color: rgba(255, 255, 255, 0.72);
   background-color: rgba(63, 63, 63, 0.638);
+  font-size: 25px;
 }
 .about{
-  font-size: 30px;
   text-align: center;
   margin: 0px auto; 
-  color: rgba(255, 255, 255, 0.72);
-  background-color: rgba(63, 63, 63, 0.638);
+  font-size: 20px;
 }
 </style>
