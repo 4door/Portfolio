@@ -9,8 +9,8 @@ export default {
         url: '/biography'
       },
       {
-        name: 'WORK',
-        url: '/work'
+        name: 'WORKS',
+        url: '/works'
       },
       {
         name: 'CONTACT',

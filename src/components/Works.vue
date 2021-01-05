@@ -1,7 +1,7 @@
 <template>
-  <section class="work">
-    <v-container fluid fill-height class="work__content">
-      <h2 h2>Work</h2>
+  <section class="works">
+    <v-container fluid fill-height class="works__content">
+      <h2 h2>Works</h2>
     </v-container>
   </section>
 </template>
