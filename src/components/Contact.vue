@@ -49,6 +49,7 @@
 
 </style>
 <script>
+import axios from 'axios'
 export default {
   data: function(){
     return{
@@ -81,11 +82,16 @@ export default {
         .join('&')
     },
     onSubmit () {
-      this.$axios
-        .$post('/', this.form)
-        .then(() => {
-          this.showToast('メッセージを送信しました');
-        });
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios.post(
+          '/',
+          this.encode({
+            ...this.form
+          }),
+          axiosConfig
+        )
     }
   }
 }
