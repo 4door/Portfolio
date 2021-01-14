@@ -6,7 +6,7 @@
     <v-container>
       <v-row class="home-summary__contents">
         <v-col md="5" class="home-summary__contents-img">
-          <a href='/biography'><img src="../assets/about.jpg" alt="" class="img-fluid"></a>
+          <img src="../assets/about.jpg" alt="" class="img-fluid">
         </v-col>
         <v-col md="5" class="home-summary__contents-text">
           <p>東京でSES企業にてプログラマとして就業中。</p>

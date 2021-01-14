@@ -4,9 +4,17 @@
       <form name="contact" l class="contact__content-text" method="POST" netlify>
         <b-col>
           <label class="label">Your Name</label>   
-          <b-form-input v-model="form.name" class="textbox" type="text" name="name" />
+          <b-form-input
+            v-model="form.name"
+            class="textbox"
+            type="text"
+            name="name" />
           <label class="label">Your Email</label>
-          <b-form-input v-model="form.mail" class="textbox" type="email" name="email" />
+          <b-form-input
+            v-model="form.email"
+            class="textbox"
+            type="email"
+            name="email" />
           <label class="label">Message</label>
           <b-form-textarea v-model="form.message" class="textbox" name="message"></b-form-textarea>
           <v-btn large dark class="button"  @click="sendBtnClick">Send</v-btn>
@@ -56,42 +64,47 @@ export default {
       form:{
         'form-name': 'contact',
         name: null,
-        mail: null,
+        email: null,
         message: null
       }
     }
   },
   methods: {
     sendBtnClick(){
+      if(false === this.checkRequired())return;
       this.onSubmit();
       this.clearForm();
     },
     clearForm(){
       this.form.name = null;
-      this.form.mail = null;
+      this.form.email = null;
       this.form.message = null;
     },
     showToast(msg){
       this.$bvToast.toast(msg);
     },
-    encode (data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
+    errorToast(msg){
+      this.$bvToast.toast(msg,{variant:'danger'});
+    },
+    checkRequired(){
+      if(this.form.name == null){
+        this.errorToast('お名前を入力してください。');
+        return false;
+      }else if(this.form.message == null){
+        this.errorToast('メッセージのの入力は必須です。');
+        return false;
+      }
     },
     onSubmit () {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      }
-      axios.post(
-          '/',
-          this.encode({
-            ...this.form
-          }),
-          axiosConfig
-        )
+      let _self = this;
+      axios.post('/', this.form)
+      .then(function(){
+        _self.showToast('メッセージの送信が完了しました。');
+      })
+      .catch(function(d){
+        console.log(d);
+        _self.errorToast('メッセージの送信が失敗しました。');        
+      })
     }
   }
 }
