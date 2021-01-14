@@ -97,7 +97,14 @@ export default {
     },
     onSubmit () {
       let _self = this;
-      axios.post('/', this.form)
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios.post('/', 
+          this.encode({
+            ...this.form
+          }),
+          axiosConfig)
       .then(function(){
         _self.showToast('メッセージの送信が完了しました。');
       })
