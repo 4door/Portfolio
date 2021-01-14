@@ -53,6 +53,7 @@ export default {
   data: function(){
     return{
       form:{
+        'form-name': 'contact',
         name: null,
         mail: null,
         message: null
@@ -61,7 +62,7 @@ export default {
   },
   methods: {
     sendBtnClick(){
-      this.showToast('メッセージを送信しました');
+      this.onSubmit();
       this.clearForm();
     },
     clearForm(){
@@ -80,18 +81,11 @@ export default {
         .join('&')
     },
     onSubmit () {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      }
-      this.axios
-        .post(
-          '/',
-          this.encode({
-            'form-name': 'contact',
-            ...this.form
-          }),
-          axiosConfig
-        )
+      this.$axios
+        .$post('/', this.form)
+        .then(() => {
+          this.showToast('メッセージを送信しました');
+        });
     }
   }
 }
