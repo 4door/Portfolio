@@ -3,6 +3,7 @@
     <v-container fluid fill-height class="contact__content">
       <form name="contact" l class="contact__content-text" method="POST" netlify>
         <b-col>
+          <h3>ご連絡はこちらのフォームから</h3>
           <label class="label">Your Name</label>   
           <b-form-input
             v-model="form.name"
@@ -16,7 +17,10 @@
             type="email"
             name="email" />
           <label class="label">Message</label>
-          <b-form-textarea v-model="form.message" class="textbox" name="message"></b-form-textarea>
+          <b-form-textarea
+            v-model="form.message"
+            class="textbox"
+            name="message"/>
           <v-btn large dark class="button"  @click="sendBtnClick">Send</v-btn>
         </b-col>
       </form>

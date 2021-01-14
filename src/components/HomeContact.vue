@@ -1,7 +1,7 @@
 <template>
   <section class="home-summary">
     <div class="section__title">
-      <div class="section__title-text">01. About Me</div>
+      <div class="section__title-text">02. Contact</div>
     </div>
     <v-container>
       <v-row class="home-summary__contents">
@@ -9,11 +9,7 @@
           <img src="../assets/about.jpg" alt="" class="img-fluid">
         </v-col>
         <v-col md="5" class="home-summary__contents-text">
-          <p>東京でSES企業にてプログラマとして就業中。</p>
-          <p>業務でのメインはJavaですが、プライベートではRuby、Kotlinを学んでいます。</p>
-          <p>最近は身の回りの「メンドクサイ」を解決すべく、IoTで住環境を整備するのに凝っていて、その際のメインはGAS。</p>
-          <p>猫と花を愛しており、掲載している写真はいずれも自身で撮影したものです。イラスト製作も趣味で、LINEスタンプなども作成しています。</p>
-        </v-col>
+          <p>ご連絡はメールフォームからお願いします</p></v-col>
       </v-row>
       <AppButton :button-text="buttonText" :url="url"/>
     </v-container>
@@ -54,8 +50,8 @@ import AppButton from './AppButton.vue'
 export default {
   data () {
     return {
-      buttonText: '詳しくみる',
-      url: '/biography'
+      buttonText: '連絡を取る',
+      url: '/contact'
     }
   },
   components: {

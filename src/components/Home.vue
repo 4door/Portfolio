@@ -2,6 +2,7 @@
   <section class="home">
     <HomeHero/>
     <HomeSummary/>
+    <HomeContact/>
   </section>
 </template>
 <style lang="scss" scoped>
@@ -12,10 +13,12 @@
 <script>
 import HomeHero from './HomeHero.vue';
 import HomeSummary from './HomeSummary.vue';
+import HomeContact from './HomeContact.vue';
 export default {
   components: {
     HomeHero,
-    HomeSummary
+    HomeSummary,
+    HomeContact
   }
 }
 </script>
