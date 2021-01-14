@@ -16,5 +16,5 @@ export default {
         name: 'CONTACT',
         url: '/contact'
       },
-    ]
+    ],
   }
