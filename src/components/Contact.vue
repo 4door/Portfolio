@@ -95,6 +95,13 @@ export default {
         return false;
       }
     },
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
     onSubmit () {
       let _self = this;
       const axiosConfig = {
