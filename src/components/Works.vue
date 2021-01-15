@@ -1,28 +1,41 @@
 <template>
   <section class="works">
     <v-container fluid fill-height class="works__content">
-      <b-col class="text">
-        <b-row class="title"><u>Works</u></b-row>
-          <b-col class="about">&lt;Skills&gt;
-          <b-row class="about">
-            ＊back-end＊<br>
+      <b-row>
+        <b-card
+          title="back-end"
+          class="mb-2"
+        >
+          <b-card-text>
             Java SE 8<br>
             -&nbsp;Spring Framework<br>
             -&nbsp;Doma2<br>
-            ＊front-end＊<br>
+          </b-card-text>
+        </b-card>
+        <b-card
+          title="front-end"
+          class="mb-2"
+        >
+          <b-card-text>
             JavaScript<br>
             -&nbsp;JQuery<br>
             -&nbsp;Handsontable<br>
             -&nbsp;Vue.js<br>
             -&nbsp;Bootstrap Vue<br>
-            ＊others＊<br>
-            - PostgreSQL 10<br>
-            - SVN<br>
-            - Git<br>
-                - Git Lab<br>
-          </b-row>
-          </b-col>
-      </b-col>
+          </b-card-text>
+        </b-card>
+        <b-card
+          title="others"
+          class="mb-2"
+        >
+          <b-card-text>
+            PostgreSQL 10<br>
+            SVN<br>
+            Git<br>
+              - Git Lab<br>
+          </b-card-text>
+        </b-card>
+      </b-row>
     </v-container>
   </section>
 </template>
@@ -38,19 +51,8 @@
     height: 100vh;
   }
 }
-.text{
-  // text-align: center;
-  // margin: 0px auto; 
-  color: rgba(255, 255, 255, 0.72);
-  background-color: rgba(63, 63, 63, 0.638);
-  font-size: 25px;
-}
-.title{
-  margin-left: 30px;
-  font-size: 30px;
-}
-.about{
-  margin-left: 10px;
-  font-size: 20px;
+.mb-2 {  
+    margin-right: 20px;
+    max-width: 50rem;
 }
 </style>
