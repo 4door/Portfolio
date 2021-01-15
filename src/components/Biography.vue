@@ -29,10 +29,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 50vh;
-  @include display_pc {
-    height: 100vh;
-  }
+  height: 100vh;
 }
 .text{
   // text-align: center;

@@ -9,6 +9,10 @@ export default {
         url: '/biography'
       },
       {
+        name: 'SKILLS',
+        url: '/skills'
+      },
+      {
         name: 'WORKS',
         url: '/works'
       },

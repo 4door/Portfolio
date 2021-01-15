@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './src/components/Home.vue'
 import Biography from './src/components/Biography.vue'
+import Skills from './src/components/Skills.vue'
 import Works from './src/components/Works.vue'
 import Contact from './src/components/Contact.vue'
  
@@ -18,6 +19,11 @@ export default new Router({
       path: '/biography',
       name: 'biography',
       component: Biography
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: Skills
     },
     {
       path: '/works',

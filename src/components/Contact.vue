@@ -3,7 +3,7 @@
     <v-container fluid fill-height class="contact__content">
       <form name="contact" l class="contact__content-text" method="POST" netlify>
         <b-col>
-          <h3>ご連絡はこちらのフォームから</h3>
+          <p>ご連絡はこちらのフォームから</p>
           <label class="label">Your Name</label>   
           <b-form-input
             v-model="form.name"
@@ -34,10 +34,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 50vh;
-  @include display_pc {
-    height: 100vh;
-  }
+  height: 100vh;
  
   &-text {
     color: rgba(255, 255, 255, 0.72);
