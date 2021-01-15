@@ -1,6 +1,9 @@
 <template>
   <section class="skills">
     <v-container fluid fill-height class="skills__content">
+    <div class="section__title">
+      <div class="section__title-text">Skills</div>
+    </div>
       <b-row style="margin: 0 0 auto;">
         <b-card
           title="back-end"
@@ -41,6 +44,9 @@
 </template>
 <style lang="scss" scope>
 @import '../styles/common/common.scss';
+.section__title {
+  padding-top: 5px !important;
+}
 .skills__content {
   background: url("../assets/top.jpg");
   background-size: cover;
