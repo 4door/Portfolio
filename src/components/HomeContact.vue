@@ -5,9 +5,6 @@
     </div>
     <v-container>
       <v-row class="home-summary__contents">
-        <v-col md="5" class="home-summary__contents-img">
-          <img src="../assets/about.jpg" alt="" class="img-fluid">
-        </v-col>
         <v-col md="5" class="home-summary__contents-text">
           <p>ご連絡はメールフォームからお願いします</p></v-col>
       </v-row>
@@ -31,13 +28,9 @@
 .home-summary__contents {
   margin-top: 20px;
   justify-content: center;
- 
-  &-img {
-    text-align: right;
-  }
- 
   &-text {
     word-wrap: break-word;
+    text-align: center;
   }
 }
 .img-fluid {
