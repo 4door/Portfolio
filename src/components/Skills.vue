@@ -48,8 +48,4 @@
   width: 100%;
   height: 100vh;
 }
-.mb-2 {  
-    margin-right: 20px;
-    max-width: 18rem;
-}
 </style>
