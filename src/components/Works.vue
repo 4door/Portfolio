@@ -9,9 +9,9 @@
           <b-card-text>
             タスク管理アプリです。<br>
             Rubyの学習に作成しました。<br>
-            リンクは
-            <a href="https://todolist4door.herokuapp.com/">こちら</a>
-            です。
+            Web上に
+            <a href="https://todolist4door.herokuapp.com/">公開</a>
+            しております。
           </b-card-text>
         </b-card>
         <b-carousel
