@@ -5,10 +5,13 @@
         <b-card
           title="Task List"
           class="mb-2"
-        >
+        > 
           <b-card-text>
-            タスク管理アプリです。
-            Rubyの学習に作成。
+            タスク管理アプリです。<br>
+            Rubyの学習に作成しました。<br>
+            リンクは
+            <a href="https://todolist4door.herokuapp.com/">こちら</a>
+            です。
           </b-card-text>
         </b-card>
         <b-carousel
@@ -19,22 +22,16 @@
           img-width="1024"
           img-height="480"
         >
-          <b-carousel-slide
+        
+          <img src="../assets/1.png" alt="" class="img-fluid">
+          <!-- <b-carousel-slide
             caption="First slide"
             img-src="https://picsum.photos/1024/480/?image=10"
           ></b-carousel-slide>
           <b-carousel-slide
             caption="Second Slide"
             img-src="https://picsum.photos/1024/480/?image=12"
-          ></b-carousel-slide>
-          <b-carousel-slide
-            caption="Third Slide"
-            img-src="https://picsum.photos/1024/480/?image=22"
-          ></b-carousel-slide>
-          <b-carousel-slide
-            caption="Fourth Slide"
-            img-src="https://picsum.photos/1024/480/?image=23"
-          ></b-carousel-slide>
+          ></b-carousel-slide> -->
         </b-carousel>
       </b-row>      
     </v-container>
