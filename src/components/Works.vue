@@ -1,11 +1,11 @@
 <template>
   <section class="works">
     <v-container fluid fill-height class="works__content">
-      <b-row style="margin: 0 0 auto;">
+      <v-row justify="center" align-content="center">
         <b-card
           title="Task List"
           class="mb-2"
-          style="max-width: 90%;"
+          style="max-width: 90%; width: 25rem;"
         > 
           <b-card-text>
             タスク管理アプリです。<br>
@@ -19,7 +19,7 @@
           </b-card-text>
         </b-card>
         <img src="../assets/1.png" alt="" class="img-fluid">
-      </b-row>     
+      </v-row>   
     </v-container>
   </section>
 </template>
@@ -34,7 +34,6 @@
 }
 .mb-2 {  
     margin-right: 20px;
-    width: 25rem;
 }
 
 element.style {

@@ -1,11 +1,11 @@
 <template>
   <section class="biography">
     <v-container fluid fill-height class="biography__content">
-      <b-row style="margin: 0 0 auto;">
+      <v-row  justify="center" align-content="center">
         <b-card
           title="Biography"
           class="mb-2"
-          style="max-width: 60rem;"
+          style="max-width: 560rem; font-size: 1.2rem"
         >
           <b-card-text>
               1996年生まれ。<br>
@@ -22,7 +22,7 @@
               また、このサイトはVue.js + Vuetifyを使用しております。<br><br>
           </b-card-text>
         </b-card>
-      </b-row>
+      </v-row>
     </v-container>
   </section>
 </template>
