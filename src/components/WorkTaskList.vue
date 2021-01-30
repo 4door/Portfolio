@@ -1,5 +1,5 @@
 <template>
-  <section class="works">
+  <section class="works-task">
     <v-container fluid fill-height class="works__content">
       <v-row justify="center" align-content="center">
         <b-card

@@ -1,21 +1,16 @@
 <template>
   <section class="works">
-    <TaskList/>
-    <Line/>
+    <WorksTaskList/>
+    <WorksLine/>
   </section>
 </template>
-<style lang="scss" scope>
-@import '../styles/common/common.scss';
-// .works {
-// }
-</style>
 <script>
-import TaskList from './WorkTaskList.vue'
-import Line from './WorkLine.vue'
+import WorksTaskList from './WorkTaskList.vue';
+import WorksLine from './WorkLine.vue';
 export default {
   components: {
-    TaskList,
-    Line
+    WorksTaskList,
+    WorksLine
   }
 }
 </script>
