@@ -17,7 +17,23 @@
             しております。
           </b-card-text>
         </b-card>
-        <img src="../assets/1.png" alt="" class="img-fluid">
+        <v-carousel>
+          <v-carousel-item
+            src="../assets/1.png"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+          <v-carousel-item
+            src="../assets/2.png"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+          <v-carousel-item
+            src="../assets/3.png"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel>
       </v-row>   
     </v-container>
   </section>
@@ -39,8 +55,8 @@ element.style {
     height: 500px;
 }
 .v-carousel {
-  width: 50% !important;
-}
+  width: 38% !important;
+  }
 </style>
 <script>
 </script>
