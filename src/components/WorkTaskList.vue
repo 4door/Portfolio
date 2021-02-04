@@ -18,21 +18,12 @@
           </b-card-text>
         </b-card>
         <v-carousel>
-          <v-carousel-item
-            src="../assets/1.png"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-          <v-carousel-item
-            src="../assets/2.png"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-          <v-carousel-item
-            src="../assets/3.png"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
+            <v-carousel-item
+              v-for="(workItem, index) in workItems"
+              :key="index"
+            >
+              <img :src="workItem.src" alt="" class="img-fluid">
+            </v-carousel-item>
         </v-carousel>
       </v-row>   
     </v-container>
@@ -59,4 +50,13 @@ element.style {
   }
 </style>
 <script>
+import constants from '../common/constants'
+ 
+export default {
+  data () {
+    return {
+      workItems: constants.taskItems
+    }
+  }
+}
 </script>

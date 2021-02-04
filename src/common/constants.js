@@ -21,4 +21,15 @@ export default {
         url: '/contact'
       },
     ],
+    taskItems: [
+      {
+        src: require('../assets/1.png'),
+      },
+      {
+        src: require('../assets/2.png'),
+      },
+      {
+        src: require('../assets/3.png'),
+      }
+    ]
   }
