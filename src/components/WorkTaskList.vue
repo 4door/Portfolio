@@ -1,9 +1,11 @@
 <template>
   <section class="works-task">
-    <v-container fluid fill-height class="works__content">
+    <div class="section__title">
+      <div class="section__title-text">01. Task List</div>
+    </div>
+    <v-container fluid fill-height class="works-task__content">
       <v-row justify="center" align-content="center">
         <b-card
-          title="Task List"
           class="mb-2"
           style="max-width: 90%; width: 25rem;"
         > 
@@ -30,13 +32,23 @@
   </section>
 </template>
 <style lang="scss" scope>
-@import '../styles/common/common.scss';
-.works__content {
-  background: url("../assets/top.jpg");
-  background-size: cover;
-  background-position: center center;
+.works-task {
+  background-color: rgb(26, 26, 26);
   width: 100%;
-  height: 100vh;
+  height: 75vh;
+}
+.works-task__content {
+  max-height: 60px;
+}
+.section__title {
+  padding-top: 120px;
+  text-align: center;
+ 
+  &-text {
+    font-weight: 700;
+    font-size: 40px;
+    color: whitesmoke;
+  }
 }
 .mb-2 {  
     margin-right: 20px;
@@ -47,7 +59,10 @@ element.style {
 }
 .v-carousel {
   width: 38% !important;
-  }
+}
+.img-fluid {
+  min-width: 100px;
+}
 </style>
 <script>
 import constants from '../common/constants'

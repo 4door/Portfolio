@@ -20,16 +20,19 @@
   </section>
 </template>
 <style lang="scss" scoped>
+.home-summary{
+  background-color: rgb(26, 26, 26);
+}
 .section__title {
   padding-top: 120px;
   text-align: center;
-  // background-color: rgb(63, 63, 63);
+  // background-color: rgb(26, 26, 26);
  
   &-text {
     font-weight: 700;
     font-size: 40px;
     // color: rgba(255, 255, 255, 0.72);
-    color: rgb(63, 63, 63);
+    color: whitesmoke;
   }
 }
 .home-summary__contents {
@@ -42,6 +45,7 @@
  
   &-text {
     word-wrap: break-word;
+    color: whitesmoke;
   }
 }
 .img-fluid {

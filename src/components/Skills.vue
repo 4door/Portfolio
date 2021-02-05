@@ -53,7 +53,7 @@
 </template>
 <style lang="scss" scope>
 @import '../styles/common/common.scss';
-.skills__content {
+.skills {
   background: url("../assets/top.jpg");
   background-size: cover;
   background-position: center center;

@@ -1,16 +1,19 @@
 <template>
   <section class="works">
+    <WorksTop/>
     <WorksTaskList/>
-    <!-- <WorksLine/> -->
+    <WorksLine/>
   </section>
 </template>
 <script>
+import WorksTop from './WorksTop.vue';
 import WorksTaskList from './WorkTaskList.vue';
-// import WorksLine from './WorkLine.vue';
+import WorksLine from './WorkLine.vue';
 export default {
   components: {
+    WorksTop,
     WorksTaskList,
-    // WorksLine
+    WorksLine
   }
 }
 </script>

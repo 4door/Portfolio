@@ -8,6 +8,7 @@
 <style lang="scss" scoped>
 .home {
   padding-bottom: 50px;
+  background-color: rgb(26, 26, 26);
 }
 </style>
 <script>
