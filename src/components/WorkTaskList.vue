@@ -13,9 +13,9 @@
             タスク管理アプリです。<br>
             Rubyの学習に作成しました。<br>
             Rubyを選んだ理由としては、やはりRuby on Railsは少ない記載量で実装できると聞いていたので、実際に自分でも作って試したくなったからです。<br><br>
-            結果としては、とんでもなく早く作ることができました。<br><br>
+            <br>
             Web上に
-            <a href="https://todolist4door.herokuapp.com/">公開</a>
+            <a href="https://todolist4door.herokuapp.com/" target="_blank" rel="noopener noreferrer">公開</a>
             しております。
           </b-card-text>
         </b-card>

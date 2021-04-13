@@ -23,13 +23,13 @@ export default {
     ],
     taskItems: [
       {
-        src: require('../assets/1.png'),
+        src: require('../assets/TODO1.png'),
       },
       {
-        src: require('../assets/2.png'),
+        src: require('../assets/TODO2.png'),
       },
       {
-        src: require('../assets/3.png'),
+        src: require('../assets/TODO3.png'),
       }
     ]
   }
