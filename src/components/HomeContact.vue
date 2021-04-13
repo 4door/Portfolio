@@ -6,7 +6,9 @@
     <v-container>
       <v-row class="home-contact__contents">
         <v-col md="5" class="home-contact__contents-text">
-          <p>ご連絡はメールフォームからお願いします</p></v-col>
+          <p>ご連絡はメールフォームからお願いします</p>
+          <a href="/contact"><img src="../assets/contact.png" alt="" class="img-fluid"></a>
+        </v-col>
       </v-row>
       <AppButton :button-text="buttonText" :url="url"/>
     </v-container>
@@ -19,7 +21,6 @@
 .section__title {
   padding-top: 120px;
   text-align: center;
-  // background-color: rgb(63, 63, 63);
  
   &-text {
     font-weight: 700;
@@ -35,9 +36,13 @@
     text-align: center;
     color: whitesmoke;
   }
+ 
+  &-img {
+    text-align: right;
+  }
 }
 .img-fluid {
-  max-width: 60%;
+  max-width: 30%;
 }
 </style>
 <script>
