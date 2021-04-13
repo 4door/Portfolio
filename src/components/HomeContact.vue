@@ -7,7 +7,7 @@
       <v-row class="home-contact__contents">
         <v-col md="5" class="home-contact__contents-text">
           <p>ご連絡はメールフォームからお願いします</p>
-          <a href="/contact"><img src="../assets/contact.png" alt="" class="img-fluid"></a>
+          <img src="../assets/contact.png" alt="" class="img-fluid">
         </v-col>
       </v-row>
       <AppButton :button-text="buttonText" :url="url"/>

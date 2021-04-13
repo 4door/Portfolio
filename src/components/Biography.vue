@@ -37,6 +37,9 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
+  @include display_pc {
+    height: 100vh;
+  }
 }
 </style>
