@@ -3,7 +3,7 @@
     <v-container fluid fill-height class="home-hero__content">
       <v-row>
         <v-col class="home-hero__content-text">
-          <p>Welcome to Shiori's Portfolio!</p>
+          <p>Welcome to 4door's Portfolio!</p>
         </v-col>
       </v-row>
     </v-container>

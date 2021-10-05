@@ -9,11 +9,10 @@
           <img src="../assets/about.jpg" alt="" class="img-fluid">
         </v-col>
         <v-col md="5" class="home-summary__contents-text">
-          <p>東京でSES企業にてプログラマとして就業中。</p>
-          <p>業務でのメインはJavaですが、<br>プライベートではRuby、Kotlinを学んでいます。</p>
-          <p>最近は身の回りの「面倒くさい」を解決すべく、<br>IoTで住環境を整備するのに凝っていて、<br>その際のメインはGAS。</p>
+          <p>不動産×金融の自社パッケージ開発を行う企業にて、<br>
+          バックエンドエンジニアとして就業中。</p>
           <p>猫と花を愛しており、<br>掲載している写真はいずれも自身で撮影したものです。<br>イラスト製作も趣味で、LINEスタンプなども作成しています。</p>
-          <a href="https://github.com/4door" target="_blank" rel="noopener noreferrer"><i class="fa fa-github " style="color: white;"></i> </a>
+          <a href="https://github.com/4door" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" style="color: white;"></i> </a>
         </v-col>
       </v-row>
       <AppButton :button-text="buttonText" :url="url"/>

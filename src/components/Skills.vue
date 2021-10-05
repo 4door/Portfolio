@@ -9,8 +9,12 @@
         >
           <b-card-text>
             Java SE 8<br>
-            -&nbsp;Spring Framework<br>
-            -&nbsp;Doma2<br>
+            Java SE 10<br>
+            〇&nbsp;SpringBoot<br>
+            〇&nbsp;Doma2<br>
+            〇&nbsp;MyBatis<br>
+            <br>～実務未経験～<br>
+            Ruby<br>
           </b-card-text>
         </b-card>
         <b-card
@@ -20,10 +24,12 @@
         >
           <b-card-text>
             JavaScript<br>
-            -&nbsp;JQuery<br>
-            -&nbsp;Handsontable<br>
-            -&nbsp;Vue.js<br>
-            -&nbsp;Bootstrap Vue<br>
+            〇&nbsp;Vue.js<br>
+            〇&nbsp;Angular<br>
+            〇&nbsp;jQuery<br>
+            〇&nbsp;Bootstrap Vue<br>
+            <br>～実務未経験～<br>
+            React<br>
           </b-card-text>
         </b-card>
         <b-card
@@ -35,7 +41,8 @@
             PostgreSQL 10<br>
             SVN<br>
             Git<br>
-              - Git Lab<br>
+            〇 GitLab<br>
+            〇 GitHub<br>
           </b-card-text>
         </b-card>
         <b-card
@@ -44,7 +51,8 @@
           style="width: 30rem; height: 20rem;  font-size: 1.2rem"
         >
           <b-card-text>
-            ・通信建設業界の業務知識<br/>
+            ・通信建設業界<br/>
+            ・不動産投資信託業界<br/>
           </b-card-text>
         </b-card>
       </v-row>
